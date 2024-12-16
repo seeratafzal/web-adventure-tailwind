@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure Web</title>
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="overflow-x-hidden">
+
+    <!--Navbar-->
+    <nav class="flex justify-between items-center p-5 absolute top-0 left-0 w-full text-white bg-black bg-opacity-60">
+        <h1 class="text-2xl font-bold">ADVENTURE</h1>
+        <ul class="hidden md:flex items-center space-x-8">
+            <li class="text-pink-500 underline font-bold"><a href="#">Home</a></li>
+            <li><a href="#">Tours</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#" class="bg-pink-500 text-white px-4 py-2 rounded-full">Contact</a></li>
+        </ul>
+        <img src="./public/menu-btn (1).png" alt="" class="w-10 cursor-pointer md:hidden">
+    </nav>
+    
+    <header class="w-screen h-screen bg-cover bg-bottom flex items-end justify-center" style="background-image: url('./public/header-bg.png')">
+        <div class="mb-36 text-center text-white">
+            <h2 class="text-2xl">Explore The Colorful World</h2>
+            <div class="w-36 h-1 bg-pink-500 my-3 mx-auto rounded"></div>
+            <h1 class="text-5xl my-6">A WONDERFUL GIFT</h1>
+            <a href="#" class="bg-pink-500 text-white px-6 py-3 rounded-full">Learn More</a>
+        </div>
+    </header>
+
+    <!--Events-->
+    <section class="w-4/5 my-20 mx-auto">
+        <div class="text-center text-2xl text-purple-700 mb-10">
+            <h1>Upcoming Events</h1>
+            <div class="w-36 h-1 bg-pink-500 my-3 mx-auto rounded"></div>
+        </div>
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            
+            <div class="flex flex-col items-center text-center mb-10 md:mb-0">
+                <img src="./public/img1.png" alt="" class="mb-4">
+                <h4 class="text-lg text-purple-600 mb-5">Everest Camp Trek</h4>
+                <p class="text-gray-500 px-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex eaque aspernatur maiores, sit consequuntur at nulla, rem sed ipsam obcaecati id animi corporis atque voluptas aliquid hic perferendis, est delectus.</p>
+                <a href="#" class="bg-pink-500 text-white px-4 py-2 rounded-full mt-8">Learn More</a>
+            </div>
+            <div class="flex flex-col items-center text-center">
+                <img src="./public/img2.png" alt="" class="mb-4">
+                <h4 class="text-lg text-purple-600 mb-5">Walking Holidays</h4>
+                <p class="text-gray-500 px-10">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum accusamus, saepe sequi nobis obcaecati adipisci unde in sunt vero fuga sed nam laboriosam iure qui ex voluptate eaque sint mollitia.</p>
+                <a href="#" class="bg-pink-500 text-white px-4 py-2 rounded-full mt-8">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!--Explore-->
+    <section class="w-full h-screen bg-cover bg-center flex items-center" style="background-image: url('./public/bg2.png')">
+        <div class="w-3/5 text-center text-white p-10">
+            <h1 class="text-5xl mb-8">EXPLORE THE WORLD</h1>
+            <div class="w-36 h-1 bg-pink-500 my-3 mx-auto rounded mb-8"></div>
+            <p class="text-gray-200">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis soluta dolorem debitis ullam, impedit repellendus animi cumque eligendi distinctio ipsa sit? Laborum aut fugit at inventore soluta commodi aliquam vitae.</p>
+            <a href="#" class="bg-pink-500 text-white px-6 py-3 rounded-full mt-10">Learn More</a>
+        </div>
+    </section>
+
+    <!--Tours-->
+    <section class="w-4/5 my-20 mx-auto">
+        <div class="flex flex-col md:flex-row justify-between items-start">
+            <div class="w-full md:w-2/5 mb-10 md:mb-0">
+                <h1 class="text-3xl text-purple-700 mb-6">UPCOMING TOURS & DESTINATION</h1>
+                <div class="w-36 h-1 bg-pink-500 my-3 mx-0 rounded"></div>
+                <p class="text-gray-500 mb-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum repellendus officia voluptate, maiores quae asperiores cum sint nobis unde sapiente fugiat, nam ipsum beatae eos sed maxime quis accusantium repudiandae!</p>
+                <a href="#" class="bg-pink-500 text-white px-4 py-2 rounded-full">Learn More</a>
+            </div>
+            <div class="w-full md:w-3/5 flex flex-wrap justify-center items-center">
+                <div class="grid grid-cols-2 gap-4">
+                    <img src="./public/img3.png" alt="" class="max-w-xs mx-2">
+                    <img src="./public/img4.png" alt="" class="max-w-xs mx-2">
+                    <img src="./public/img5.png" alt="" class="max-w-xs mx-2">
+                    <img src="./public/img6.png" alt="" class="max-w-xs mx-2">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <section class="bg-purple-700 text-white py-10 text-center">
+        <p>123 Fifth Avenue, NY 10160, New York, USA | Phone: 0800-450-434 | Email: content@gmail.com</p>
+        <p class="mt-4">Copyright © 2024 Outdoor Adventure</p>
+    </section>
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+        menuBtn.addEventListener('click', () => {
+            navlinks.classList.toggle('hidden') 
+        }) 
+    </script>
+     
+</body>
+</html>
